@@ -13,7 +13,7 @@ from confluent_kafka import Consumer
 KAFKA_CONF = {
     'bootstrap.servers': '127.0.0.1:9092', 
     'group.id': 'db-storage-group', 
-    'auto_offset_reset': 'earliest' # Ensures we don't miss data if the consumer is offline
+    'auto.offset.reset': 'earliest' # Ensures we don't miss data if the consumer is offline
 }
 
 # PostgreSQL connection parameters
